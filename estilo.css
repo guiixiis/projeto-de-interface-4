@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa - Soluções Inteligentes</title>
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para Ícones Sociais e Gerais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO (NAVBAR) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-marca-primaria sticky-top shadow-sm">
+        <div class="container">
+            <!-- Nome da Empresa / Logo -->
+            <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-rocket text-marca-secundaria me-2"></i>
+                Inova<span class="text-marca-secundaria">Brand</span>
+            </a>
+            <!-- Botão Hamburguer para Responsividade -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links de Navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#faq">Perguntas Frequentes</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="equipe.html">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contato">Contato</a></li>
+                </ul>
+                <!-- Redes Sociais na Navbar -->
+                <div class="d-flex ms-lg-3 mt-3 mt-lg-0 justify-content-center">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f hover-secundario"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CABEÇALHO COM CARROSSEL DE IMAGENS ROTATIVAS E TEXTO DE BOAS-VINDAS -->
+    <header class="position-relative">
+        <div id="carouselHeader" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-149736621648-37526070297c?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Espaço Corporativo Moderno">
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Tecnologia e Inovação">
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Equipe de Sucesso">
+                </div>
+            </div>
+        </div>
+        <!-- Texto de Destaque Fixo Sobreposto ao Carrossel -->
+        <div class="carousel-overlay text-center px-3">
+            <div class="container">
+                <h1 class="display-3 fw-bold mb-3">Impulsione Seu Negócio com a <span class="text-marca-secundaria">InovaBrand</span></h1>
+                <p class="lead mb-4 max-width-600 mx-auto">Desenvolvemos soluções de alta tecnologia alinhadas à estratégia da sua marca para gerar resultados reais e escaláveis.</p>
+                <a href="#produtos" class="btn btn-marca btn-lg px-5 py-3 rounded-pill shadow">Conheça Nossos Produtos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 1: SOBRE NÓS (Com 1º Acordeon embutido) -->
+    <section id="sobre" class="py-5 bg-white">
+        <div class="container my-5">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <span class="text-marca-secundaria fw-bold text-uppercase tracking-wider">Quem Somos</span>
+                    <h2 class="display-5 fw-bold text-marca-primaria mb-4">Líderes em inovação e transformação digital</h2>
+                    <p class="text-muted leading-relaxed">Fundada com o propósito de quebrar barreiras tecnológicas, a InovaBrand atua no desenvolvimento de ecossistemas robustos que otimizam a produtividade de empresas globais.</p>
+                    <p class="text-muted mb-4">Nosso foco é aliar usabilidade, design marcante e engenharia de ponta para entregar a melhor experiência do mercado aos nossos parceiros.</p>
+                    
+                    <!-- Acordeon 1: Diferenciais da Empresa -->
+                    <div class="accordion shadow-sm" id="accordionSobre">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSobreOne">
+                                <button class="accordion-button fw-bold text-marca-primaria" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSobreOne" aria-expanded="true" aria-controls="collapseSobreOne">
+                                    <i class="fa-solid fa-award me-2 text-marca-secundaria"></i> Nosso Compromisso com a Qualidade
+                                </button>
+                            </h2>
+                            <div id="collapseSobreOne" class="accordion-collapse collapse show" aria-labelledby="headingSobreOne" data-bs-parent="#accordionSobre">
+                                <div class="accordion-body text-muted">
+                                    Garantimos o selo de excelência em cada linha de código ou estratégia traçada, acompanhando de perto o crescimento de nossos clientes com auditorias completas de performance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 shadow" alt="Reunião de Alinhamento da Empresa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: PRODUTOS (Cards Responsivos) -->
+    <section id="produtos" class="py-5 bg-light">
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <span class="text-marca-secundaria fw-bold text-uppercase">Soluções Completas</span>
+                <h2 class="display-5 fw-bold text-marca-primaria">Nossos Produtos Premium</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Descubra ferramentas criadas especificamente para escalar a operação do seu negócio com máxima segurança.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Produto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <div class="bg-light p-3 rounded-3 d-inline-block mb-4">
+                                <i class="fa-solid fa-chart-line fa-2x text-marca-secundaria"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-marca-primaria">Plataforma Analytics</h4>
+                            <p class="card-text text-muted">Métricas em tempo real com inteligência artificial para prever comportamentos de mercado e otimizar conversões.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 2 (Destaque nas cores da marca) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow bg-marca-primaria text-white p-3">
+                        <div class="card-body">
+                            <div class="bg-opacity-10 bg-white p-3 rounded-3 d-inline-block mb-4">
+                                <i class="fa-solid fa-shield-halved fa-2x text-marca-secundaria"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Cloud Shield Security</h4>
+                            <p class="card-text text-white-50">Proteção de dados em nuvem com criptografia de ponta a ponta e conformidade total com as leis de proteção de dados vigentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <div class="bg-light p-3 rounded-3 d-inline-block mb-4">
+                                <i class="fa-solid fa-mobile-screen-button fa-2x text-marca-secundaria"></i>
+                            </div>
+                            <h4 class="card-title fw-bold text-marca-primaria">Ecossistema Omnichannel</h4>
+                            <p class="card-text text-muted">Integre suas lojas físicas, aplicativos móveis e e-commerce em uma interface centralizada e intuitiva de vendas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: PERGUNTAS FREQUENTES (Com 2º Acordeon exigido) -->
+    <section id="faq" class="py-5 bg-white">
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <span class="text-marca-secundaria fw-bold text-uppercase">Dúvidas Comuns</span>
+                <h2 class="display-5 fw-bold text-marca-primaria">Perguntas Frequentes</h2>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <!-- Acordeon 2: Estrutura de FAQ -->
+                    <div class="accordion shadow-sm" id="accordionFAQ">
+                        <!-- Item FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaqOne">
+                                <button class="accordion-button fw-bold text-marca-primaria" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                                    Como funciona o processo de migração para a nuvem?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="headingFaqOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    Nossa equipe mapeia toda a sua infraestrutura legada e realiza uma migração em etapas estratégicas, garantindo o funcionamento do seu negócio sem interrupções ou perda de dados.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaqTwo">
+                                <button class="accordion-button collapsed fw-bold text-marca-primaria" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
+                                    Quais são os prazos médios de implementação dos softwares?
+                                </button>
+                            </h2>
+                            <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="headingFaqTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    O prazo médio varia entre 2 a 6 semanas, dependendo do grau de personalização e do tamanho dos bancos de dados a serem unificados no novo ecossistema.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: DEPOIMENTOS (Carrossel de Opiniões dos Clientes) -->
+    <section id="depoimentos" class="py-5 depoimentos-bg text-center">
+        <div class="container my-5">
+            <span class="text-marca-secundaria fw-bold text-uppercase">Feedback</span>
+            <h2 class="display-5 fw-bold mb-5 text-white">O Que Dizem Nossos Clientes</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner px-4">
+                            <!-- Depoimento 1 -->
+                            <div class="carousel-item active">
+                                <i class="fa-solid fa-quote-left fa-3x text-marca-secundaria mb-4"></i>
+                                <p class="fs-4 fst-italic lh-base">"A implementação do Cloud Shield Security reduziu nossas vulnerabilidades a zero. O suporte técnico é extremamente veloz e assertivo."</p>
+                                <div class="mt-4">
+                                    <h5 class="fw-bold text-marca-secundaria mb-0">Roberto Alencar</h5>
+                                    <small class="text-white-50">Diretor de Tecnologia - Nexus Corp</small>
+                                </div>
+                            </div>
+                            <!-- Depoimento 2 -->
+                            <div class="carousel-item">
+                                <i class="fa-solid fa-quote-left fa-3x text-marca-secundaria mb-4"></i>
+                                <p class="fs-4 fst-italic lh-base">"Nossas vendas cresceram mais de 45% nos primeiros três meses após a unificação dos canais com a plataforma Omnichannel."</p>
+                                <div class="mt-4">
+                                    <h5 class="fw-bold text-marca-secundaria mb-0">Mariana Costa</h5>
+                                    <small class="text-white-50">VP de Operações - Global Retail</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controles do Carrossel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: CONTATO (Formulário e Localização via OpenStreetMap Iframe) -->
+    <section id="contato" class="py-5 bg-white">
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <span class="text-marca-secundaria fw-bold text-uppercase">Fale Conosco</span>
+                <h2 class="display-5 fw-bold text-marca-primaria">Pronto para Iniciar?</h2>
+                <p class="text-muted">Preencha o formulário abaixo ou visite nossa sede corporativa.</p>
+            </div>
+            
+            <div class="row g-5 align-items-stretch">
+                <!-- Formulário estruturado com classes Bootstrap -->
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="bg-light p-4 p-md-5 rounded-3 shadow-sm h-100">
+                        <h4 class="fw-bold text-marca-primaria mb-4">Envie uma Mensagem</h4>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="inputNome" class="form-label fw-semibold text-muted">Nome Completo</label>
+                                <input type="text" class="form-control form-control-lg border-0 shadow-sm" id="inputNome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label fw-semibold text-muted">E-mail Corporativo</label>
+                                <input type="email" class="form-control form-control-lg border-0 shadow-sm" id="inputEmail" placeholder="nome@empresa.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputMensagem" class="form-label fw-semibold text-muted">Como podemos ajudar o seu negócio?</label>
+                                <textarea class="form-control border-0 shadow-sm" id="inputMensagem" rows="4" placeholder="Descreva sucintamente o seu projeto..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-marca btn-lg w-100 py-3 mt-2">Enviar Proposta</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Mapa de Localização Integrado -->
+                <div class="col-12 col-md-12 col-lg-6 mapa-container d-flex flex-column justify-content-between">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.467027581781!2d-47.88417742398516!3d-15.781944722306915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3aec401344ef%3A0xf69300cbf90e6e!2sEsplanada%20dos%20Minist%C3%A9rios!5e0!3m2!1gpt-BR!2sbr!4v1700000000000!5m2!1gpt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="mt-3 bg-light p-3 rounded-3 shadow-sm text-muted">
+                        <p class="mb-1"><i class="fa-solid fa-location-dot text-marca-secundaria me-2"></i> Esplanada dos Ministérios, Bloco A - Brasília, DF</p>
+                        <p class="mb-0"><i class="fa-solid fa-phone text-marca-secundaria me-2"></i> +55 (61) 3333-4444</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="bg-marca-primaria text-white py-4 text-center border-top border-dark">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0 text-white-50">© 2026 InovaBrand. Desenvolvido com Bootstrap 5. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle com Popper JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
