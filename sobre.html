@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Nexus Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">Nexus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GRADE DE PROJETOS E FILTROS -->
+    <section class="py-5 bg-white">
+        <div class="container my-4">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-brand-primary">Nossos Projetos</h1>
+                <p class="text-muted">Casos de sucesso que geraram transformações reais.</p>
+                
+                <!-- Barra de Filtros -->
+                <div class="mt-4">
+                    <button class="btn btn-light filter-btn active mx-1 shadow-sm px-3" onclick="filterSelection('all')">Todos</button>
+                    <button class="btn btn-light filter-btn mx-1 shadow-sm px-3" onclick="filterSelection('web')">Websites</button>
+                    <button class="btn btn-light filter-btn mx-1 shadow-sm px-3" onclick="filterSelection('design')">Design</button>
+                </div>
+            </div>
+
+            <!-- Grade de Imagens (Cards Interativos) -->
+            <div class="row g-4">
+                <!-- Projeto 1 -->
+                <div class="col-12 col-md-6 col-lg-4 portfolio-item web">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="E-Commerce Platform">
+                        <div class="portfolio-overlay">
+                            <h5 class="fw-bold mb-1">E-Commerce Enterprise</h5>
+                            <p class="small mb-0">Clique para detalhes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-12 col-md-6 col-lg-4 portfolio-item design">
+                    <div class="portfolio-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h5 class="fw-bold mb-1">Branding Vanguard</h5>
+                            <p class="small mb-0">Clique para detalhes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-brand-primary">E-Commerce Enterprise</h5>
+                    <button type="button" class="btn-close" data-bs-shadow="none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-muted">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3 w-100" alt="Full Image">
+                    <p>Desenvolvimento completo de uma plataforma escalável com integrações omnichannel nativas e processamento de pagamentos resiliente capaz de suportar milhares de acessos concorrentes.</p>
+                    <p><strong>Tecnologias:</strong> Node.js, Bootstrap 5, AWS Cloud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-brand-primary">Branding Vanguard</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-muted">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3 w-100" alt="Full Image">
+                    <p>Redesenho completo da identidade de marca e posicionamento de mercado, focado na geração de valor digital moderno e apelo visual refinado.</p>
+                    <p><strong>Escopo:</strong> UI/UX Design, Identidade Visual, Tipografia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT SIMPLES DE FILTRO -->
+    <script>
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("portfolio-item");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                if (x[i].className.indexOf(c) > -1) {
+                    x[i].style.display = "block";
+                }
+            }
+            // Atualizar classe ativa
+            var btnContainer = document.querySelector(".mt-4");
+            var btns = btnContainer.getElementsByClassName("filter-btn");
+            for (var j = 0; j < btns.length; j++) {
+                btns[j].addEventListener("click", function(){
+                    var current = btnContainer.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        }
+    </script>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-brand-primary text-white py-4 text-center mt-5">
+        <div class="container">
+            <p class="small text-white-50 mb-0">© 2026 Nexus Corporation. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
