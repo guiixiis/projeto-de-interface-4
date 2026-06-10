@@ -3,107 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa Equipe - InovaBrand</title>
-    <!-- Bootstrap 5 CSS via CDN -->
+    <title>Sobre Nós | Nexus Digital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
 
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-marca-primaria sticky-top shadow-sm">
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand-primary sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
-                <i class="fa-solid fa-rocket text-marca-secundaria me-2"></i>
-                Inova<span class="text-marca-secundaria">Brand</span>
-            </a>
+            <a class="navbar-brand fw-bold fs-3 text-uppercase" href="index.html">Nexus</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#sobre">Sobre Nós</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#produtos">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 active" href="equipe.html">Equipe</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#contato">Contato</a></li>
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- PÁGINA DE EQUIPE CORPORATIVA -->
-    <section class="py-5 bg-light flex-grow-1">
-        <div class="container my-5">
-            <div class="text-center mb-5">
-                <span class="text-marca-secundaria fw-bold text-uppercase">Capital Humano</span>
-                <h1 class="display-4 fw-bold text-marca-primaria">Mentes por Trás do Sucesso</h1>
-                <p class="text-muted mx-auto" style="max-width: 650px;">Conheça o time de especialistas multidisciplinares focados em desenhar o futuro digital da sua marca.</p>
+    <!-- HISTÓRIA, MISSÃO E VALORES -->
+    <section class="py-5 bg-white">
+        <div class="container my-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-brand-primary mb-3">Nossa História</h1>
+                    <p class="text-muted leading-relaxed">Nascemos da necessidade de conectar grandes desafios corporativos a soluções tecnológicas disruptivas. Ao longo dos anos, construímos uma cultura baseada em engenharia forte, agilidade e parcerias duradouras.</p>
+                    <p class="text-muted">Acreditamos que o design aliado à arquitetura robusta de software é a chave para criar produtos inesquecíveis.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Equipe Nexus">
+                </div>
             </div>
 
-            <div class="row g-4 justify-content-center">
-                <!-- Membro 1 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-equipe border-0 shadow-sm text-center h-100 py-4">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" class="card-img-top rounded-circle mx-auto mt-2" alt="CEO Carlos Mendes">
-                        <div class="card-body">
-                            <h4 class="card-title fw-bold text-marca-primaria mb-1">Carlos Mendes</h4>
-                            <h6 class="text-marca-secundaria fw-semibold mb-3">CEO & Fundador</h6>
-                            <p class="card-text text-muted px-2">Engenheiro de Sistemas com mais de 15 anos de vivência executiva em metodologias ágeis e escala corporativa.</p>
-                        </div>
-                        <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fab fa-linkedin-in text-marca-primaria"></i></a>
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fa-solid fa-envelope text-marca-primaria"></i></a>
-                        </div>
+            <!-- MISSÃO, VISÃO E VALORES -->
+            <div class="row g-4 mt-5 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 bg-light">
+                        <i class="fa-solid fa-bullseye fa-2x text-brand-accent mb-2"></i>
+                        <h5 class="fw-bold">Missão</h5>
+                        <p class="text-muted small mb-0">Prover ecossistemas digitais eficientes que otimizem rotinas corporativas e aumentem a lucratividade de parceiros.</p>
                     </div>
                 </div>
-
-                <!-- Membro 2 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-equipe border-0 shadow-sm text-center h-100 py-4">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" class="card-img-top rounded-circle mx-auto mt-2" alt="CTO Ana Clara">
-                        <div class="card-body">
-                            <h4 class="card-title fw-bold text-marca-primaria mb-1">Ana Clara Rocha</h4>
-                            <h6 class="text-marca-secundaria fw-semibold mb-3">Diretora de Tecnologia (CTO)</h6>
-                            <p class="card-text text-muted px-2">Especialista em segurança cibernética e arquitetura distribuída de dados na nuvem.</p>
-                        </div>
-                        <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fab fa-linkedin-in text-marca-primaria"></i></a>
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fab fa-github text-marca-primaria"></i></a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 bg-light">
+                        <i class="fa-solid fa-eye fa-2x text-brand-accent mb-2"></i>
+                        <h5 class="fw-bold">Visão</h5>
+                        <p class="text-muted small mb-0">Ser reconhecida globalmente como hub principal de inovação e engenharia de software centrada no usuário.</p>
                     </div>
                 </div>
-
-                <!-- Membro 3 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="card card-equipe border-0 shadow-sm text-center h-100 py-4">
-                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" class="card-img-top rounded-circle mx-auto mt-2" alt="Head de Design Bruno Lima">
-                        <div class="card-body">
-                            <h4 class="card-title fw-bold text-marca-primaria mb-1">Bruno Lima</h4>
-                            <h6 class="text-marca-secundaria fw-semibold mb-3">Head de Design & UX</h6>
-                            <p class="card-text text-muted px-2">Designer focado em jornadas de usuário limpas, intuitivas e esteticamente disruptivas.</p>
-                        </div>
-                        <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fab fa-linkedin-in text-marca-primaria"></i></a>
-                            <a href="#" class="text-muted mx-2 fs-5"><i class="fab fa-behance text-marca-primaria"></i></a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 bg-light">
+                        <i class="fa-solid fa-heart fa-2x text-brand-accent mb-2"></i>
+                        <h5 class="fw-bold">Valores</h5>
+                        <p class="text-muted small mb-0">Transparência radical, excelência técnica, foco do cliente e diversidade criativa na resolução de problemas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SEÇÃO EQUIPE -->
+    <section class="py-5 bg-light">
+        <div class="container my-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-brand-primary display-5">Nossa Equipe</h2>
+                <p class="text-muted">Os especialistas focados no sucesso do seu projeto.</p>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border-0 shadow-sm p-3 h-100">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="CEO">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Lucas Silva</h5>
+                            <small class="text-brand-accent fw-medium">Diretor Executivo</small>
+                            <p class="card-text text-muted small mt-2">Estrategista com mais de uma década de experiência internacional em TI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border-0 shadow-sm p-3 h-100">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="CTO">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Beatriz Rocha</h5>
+                            <small class="text-brand-accent fw-medium">Head de Tecnologia</small>
+                            <p class="card-text text-muted small mt-2">Especialista em infraestrutura em nuvem de larga escala e criptografia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA CONVITE -->
+            <div class="text-center mt-5 pt-3">
+                <h4 class="fw-bold text-brand-primary">Quer conhecer mais sobre o nosso fluxo?</h4>
+                <a href="contato.html" class="btn btn-brand btn-lg px-5 py-3 mt-2 rounded shadow-sm">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
     <!-- RODAPÉ -->
-    <footer class="bg-marca-primaria text-white py-4 text-center border-top border-dark">
+    <footer class="bg-brand-primary text-white py-4 text-center">
         <div class="container">
-            <p class="mb-0 text-white-50">© 2026 InovaBrand. Todos os direitos reservados.</p>
+            <p class="small text-white-50 mb-0">© 2026 Nexus Corporation. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle com Popper JS via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
